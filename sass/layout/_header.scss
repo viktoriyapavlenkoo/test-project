@@ -1,0 +1,49 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: $color-primary;
+    z-index: 5;
+    &__container {
+        display: flex;
+        align-items: center;
+        height: 6em;
+        justify-content: space-between;
+    }
+}
+
+.menu {
+    display: flex;
+    max-width: 645px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1em;
+    margin: 0 6em;
+    &__item--active {
+        a {
+            &::before {
+                @include lines-psevdoelement;
+            }
+            &::after {
+                @include lines-psevdoelement(1.4em);
+            }
+        }
+       
+    }
+    a {
+        position: relative;
+        font-size: $small-text;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        
+        &:hover::before,
+        &:focus::before{
+            @include lines-psevdoelement;
+        }
+        &:hover::after,
+        &:focus::after {
+            @include lines-psevdoelement(1.4em);
+        }
+        
+    }
+
+}

@@ -86,6 +86,10 @@ main {
   padding: 0 15px;
 }
 
+section {
+  margin-bottom: 6em;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,9 +100,9 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 222px;
+  max-width: 15em;
   width: 100%;
-  padding: 30px 0;
+  padding: 1.8em 0;
   background-color: #FFFFFF;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -116,4 +120,249 @@ main {
   font-size: 4em;
   font-weight: 300;
   color: #BDBDBD;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 5;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 645px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1em;
+  margin: 0 6em;
+}
+.menu__item--active a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #000000;
+  width: 100%;
+  height: 1px;
+  top: -4px;
+}
+.menu__item--active a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #000000;
+  width: 100%;
+  height: 1px;
+  top: 1.4em;
+}
+.menu a {
+  position: relative;
+  font-size: 0.75em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.menu a:hover::before, .menu a:focus::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #000000;
+  width: 100%;
+  height: 1px;
+  top: -4px;
+}
+.menu a:hover::after, .menu a:focus::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #000000;
+  width: 100%;
+  height: 1px;
+  top: 1.4em;
+}
+
+.hero {
+  margin-top: 6em;
+}
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+.hero .hero__first-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 10%;
+}
+.hero .hero__second-block {
+  position: relative;
+}
+.hero .hero__second-block .img-block img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.hero .hero__second-block a {
+  position: absolute;
+  bottom: 0;
+}
+
+.hero__title {
+  text-transform: uppercase;
+}
+.hero__title span {
+  font-weight: 700;
+  color: #000000;
+}
+
+.hero__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hero__btns button {
+  width: 53px;
+  height: 53px;
+  border: 1px solid #F3F3F3;
+}
+.hero__btns button:first-child {
+  margin-right: 1em;
+}
+
+.slides {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4em;
+}
+.slides li {
+  font-size: 1.35em;
+  color: #BDBDBD;
+}
+.slides__current::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #BDBDBD;
+  width: 40px;
+  height: 1px;
+  top: 10px;
+  left: 1.5em;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.company__container {
+  position: relative;
+  background-color: #FBFBFB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2em;
+  padding: 2em;
+}
+
+.company__img-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 4em;
+  gap: 2em;
+}
+.company__img-block .first-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+}
+.company__img-block .first-block .img-block:last-child {
+  position: absolute;
+  bottom: -2em;
+}
+.company__img-block .second-block {
+  margin-top: 2em;
+}
+
+.company__text {
+  font-weight: 300;
+  line-height: 1.56;
+  margin: 20px 0;
+}
+
+.tasks__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2em;
+  margin-top: 2.5em;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.tasks__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+}
+.tasks__list li:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 35%;
+          flex: 0 1 35%;
+}
+.tasks__list li:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 51%;
+          flex: 0 1 51%;
+}
+.tasks__list li .tasks__number {
+  padding: 0;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 12.5em;
+  font-weight: 900;
+  color: #F3F3F3;
+  height: 100%;
+}
+.tasks__list li .text {
+  font-size: 1.35em;
+  line-height: 1.6;
 }/*# sourceMappingURL=main.css.map */
