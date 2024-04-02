@@ -1,0 +1,18 @@
+//utils
+@import './utils/fonts';
+@import './utils/variables';
+
+// base
+@import './base';
+
+//components
+@import './components';
+
+//layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/company';
+@import './layout/tasks';
+@import './layout/projects';
+@import './layout/contacts';
+@import './layout/footer';

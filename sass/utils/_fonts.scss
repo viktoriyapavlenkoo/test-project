@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'TT Hoves';
+    src: local('TT Hoves Regular'),
+    local('TTHoves-Regular'),
+    url('/fonts/TTHoves-Regular.woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'TT Hoves';
+    src: local('TT Hoves Medium'),
+    local('TTHoves-Medium'),
+    url('/fonts/TTHoves-Medium.woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'TT Hoves';
+    src: local('TT Hoves Light'),
+    local('TTHoves-Light'),
+    url('/fonts/TTHoves-Light.woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'TT Hoves';
+    src: local('TT Hoves Bold'),
+    local('TTHoves-Bold'),
+    url('/fonts/TTHoves-Bold.woff');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Black'),
+    local('SFProDisplay-Black'),
+    url('/fonts/sf-pro-display-black.otf');
+    font-weight: 900;
+}

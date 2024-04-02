@@ -3,227 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Test</title>
     
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="container header__container">
-                <a href="/" class="logo header__logo">
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="logo header__logo">
+                <img src="./images/logo-img.svg" alt="Логотип">
+            </a>
+            <ul class="menu header__menu">
+                <li class="menu__item">
+                    <a href="/">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Галерея</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Проекты</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Сертификаты</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__first-block">
+                    <h1 class="title section__title hero__title">Project <span>home</span></h1>
+                    <div class="hero__btns">
+                        <button type="button" class="btn hero__btn slider-btn">
+                            <img src="./images/arrow-left-icon.svg" alt="Стрелка влево">
+                        </button>
+                        <button type="button" class="btn hero__btn slider-btn">
+                            <img src="./images/arrow-right-icon.svg" alt="Стрелка вправо">
+                        </button>
+                    </div>
+                    <ul class="hero__list slides">
+                        <li class="hero__item current-slide">01</li>
+                        <li class="hero__item all-slides">02</li>
+                    </ul>
+                </div>
+                <div class="hero__second-block">
+                    <img src="./images/home-img-1.png" alt="Изображение проекта здания">
+                    <a href="#" class="link-btn hero__link">Взглянуть <img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></a>
+                </div>
+            </div>
+        </section>
+        <section class="company">
+            <div class="container company__container">
+                <div class="company__img-block">
+                    <img src="./images/company-img-1.png" alt="" class="Изображение здания 1">
+                    <img src="./images/company-img-2.png" alt="" class="Изображение здания 2">
+                    <img src="./images/company-img-3.png" alt="" class="Изображение здания 3">
+                </div>
+                <div class="company__text-block">
+                    <h2 class="title section__title company__title">О компании</h2>
+                    <p class="text company__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <a href="#" class="link-btn company__link">Читать<img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></a>
+                </div>
+            </div>
+        </section>
+        <section class="tasks">
+            <div class="container tasks__container">
+                <h2 class="title section__title tasks__title">Основные задачи</h2>
+                <ul class="tasks__list">
+                    <li class="tasks__item">
+                        <p class="tasks__number">1</p>
+                        <p class="text tasks__text">Создание комфортных условий и повышение качества обслуживания клиентов</p>
+                    </li>
+                    <li class="tasks__item">
+                        <p class="tasks__number">2</p>
+                        <p class="text tasks__text">Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="container projects__container">
+                <h2 class="title section__title projects__title">Основные задачи</h2>
+                <ul class="projects__list">
+                    <li class="projects__item">
+                        <div class="projects-item__img-block">
+                            <img src="./images/project-img-1.png" alt="Досуговый центр">
+                        </div>
+                        <div class="hover-block">
+                            <h3 class="projects-item__title">Досуговый центр</h3>
+                            <a href="#" class="link-btn item__link">Подробнее<img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></a>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <div class="projects-item__img-block">
+                            <img src="./images/project-img-2.png" alt="Выставочный центр">
+                        </div>
+                        <div class="hover-block">
+                            <h3 class="projects-item__title">Выставочный центр</h3>
+                            <a href="#" class="link-btn item__link">Подробнее<img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></a>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <div class="projects-item__img-block">
+                            <img src="./images/project-img-3.png" alt="Стадион">
+                        </div>
+                        <div class="hover-block">
+                            <h3 class="projects-item__title">Стадион</h3>
+                            <a href="#" class="link-btn item__link">Подробнее<img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></a>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <div class="projects-item__img-block">
+                            <img src="./images/project-img-4.png" alt="Многоквартиыный жилой дом">
+                        </div>
+                        <div class="hover-block">
+                            <h3 class="projects-item__title">Многоквартиыный жилой дом</h3>
+                            <a href="#" class="link-btn item__link">Подробнее<img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></a>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <div class="projects-item__img-block">
+                            <img src="./images/project-img-5.png" alt="Развлекательная площадка">
+                        </div>
+                        <div class="hover-block">
+                            <h3 class="projects-item__title">Развлекательная площадка</h3>
+                            <a href="#" class="link-btn item__link">Подробнее<img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container contacts__container">
+                <h2 class="title section__title contacts__title">Связаться с нами</h2>
+                <div class="contacts__content">
+                    <form action="" method="post" class="form contacts__form">
+                        <input type="text" id="name" name="name" placeholder="Имя">
+                        <input type="number" id="phone" name="phone" placeholder="Номер телефона*">
+                        <input type="email" id="email" name="email" placeholder="E-mail*">
+                        <input type="text" id="product" name="product" placeholder="Интересующий товар/услуга">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Сообщение*"></textarea>
+                        <p class="text contacts__text form__text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+                        <button type="submit">Отправить<img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></button>
+                    </form>
+                    <div class="contacts__img-block">
+                        <img src="./images/contacts-img-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container main-footer__container">
+            <div class="footer__logo-block">
+                <a href="/" class="logo footer__logo">
                     <img src="./images/logo-img.svg" alt="Логотип">
                 </a>
-                <ul class="menu header__menu">
-                    <li class="menu__item">
+            </div>
+            <div class="footer__info-block">
+                <h4 class="title footer__title">Информация</h4>
+                <ul class="info-block__list">
+                    <li class="info-block__item">
                         <a href="/">Главная</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="info-block__item">
                         <a href="#">Галерея</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="info-block__item">
                         <a href="#">Проекты</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="info-block__item">
                         <a href="#">Сертификаты</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="info-block__item">
                         <a href="#">Контакты</a>
                     </li>
                 </ul>
             </div>
-        </header>
-        <main class="main">
-            <section class="hero">
-                <div class="container hero__container">
-                    <div class="hero__first-block">
-                        <h1 class="title section__title hero__title">Project <span>home</span></h1>
-                        <div class="hero__btns">
-                            <button type="button" class="btn hero__btn slider-btn">
-                                <img src="./images/arrow-left-icon.svg" alt="Стрелка влево">
-                            </button>
-                            <button type="button" class="btn hero__btn slider-btn">
-                                <img src="./images/arrow-right-icon.svg" alt="Стрелка вправо">
-                            </button>
-                        </div>
-                        <ul class="hero__list slides">
-                            <li class="hero__item current-slide">01</li>
-                            <li class="hero__item all-slides">02</li>
-                        </ul>
-                    </div>
-                    <div class="hero__second-block">
-                        <img src="./images/home-img-1.png" alt="Изображение проекта здания">
-                        <a href="#" class="link-btn hero__link">Взглянуть <img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></a>
-                    </div>
-                </div>
-            </section>
-            <section class="company">
-                <div class="container company__container">
-                    <div class="company__img-block">
-                        <img src="./images/company-img-1.png" alt="" class="Изображение здания 1">
-                        <img src="./images/company-img-2.png" alt="" class="Изображение здания 2">
-                        <img src="./images/company-img-3.png" alt="" class="Изображение здания 3">
-                    </div>
-                    <div class="company__text-block">
-                        <h2 class="title section__title company__title">О компании</h2>
-                        <p class="text company__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                        <a href="#" class="link-btn company__link">Читать<img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></a>
-                    </div>
-                </div>
-            </section>
-            <section class="tasks">
-                <div class="container tasks__container">
-                    <h2 class="title section__title tasks__title">Основные задачи</h2>
-                    <ul class="tasks__list">
-                        <li class="tasks__item">
-                            <p class="tasks__number">1</p>
-                            <p class="text tasks__text">Создание комфортных условий и повышение качества обслуживания клиентов</p>
-                        </li>
-                        <li class="tasks__item">
-                            <p class="tasks__number">2</p>
-                            <p class="text tasks__text">Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="projects">
-                <div class="container projects__container">
-                    <h2 class="title section__title projects__title">Основные задачи</h2>
-                    <ul class="projects__list">
-                        <li class="projects__item">
-                            <div class="projects-item__img-block">
-                                <img src="./images/project-img-1.png" alt="Досуговый центр">
-                            </div>
-                            <div class="hover-block">
-                                <h3 class="projects-item__title">Досуговый центр</h3>
-                                <a href="#" class="link-btn item__link">Подробнее<img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></a>
-                            </div>
-                        </li>
-                        <li class="projects__item">
-                            <div class="projects-item__img-block">
-                                <img src="./images/project-img-2.png" alt="Выставочный центр">
-                            </div>
-                            <div class="hover-block">
-                                <h3 class="projects-item__title">Выставочный центр</h3>
-                                <a href="#" class="link-btn item__link">Подробнее<img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></a>
-                            </div>
-                        </li>
-                        <li class="projects__item">
-                            <div class="projects-item__img-block">
-                                <img src="./images/project-img-3.png" alt="Стадион">
-                            </div>
-                            <div class="hover-block">
-                                <h3 class="projects-item__title">Стадион</h3>
-                                <a href="#" class="link-btn item__link">Подробнее<img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></a>
-                            </div>
-                        </li>
-                        <li class="projects__item">
-                            <div class="projects-item__img-block">
-                                <img src="./images/project-img-4.png" alt="Многоквартиыный жилой дом">
-                            </div>
-                            <div class="hover-block">
-                                <h3 class="projects-item__title">Многоквартиыный жилой дом</h3>
-                                <a href="#" class="link-btn item__link">Подробнее<img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></a>
-                            </div>
-                        </li>
-                        <li class="projects__item">
-                            <div class="projects-item__img-block">
-                                <img src="./images/project-img-5.png" alt="Развлекательная площадка">
-                            </div>
-                            <div class="hover-block">
-                                <h3 class="projects-item__title">Развлекательная площадка</h3>
-                                <a href="#" class="link-btn item__link">Подробнее<img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="contacts">
-                <div class="container contacts__container">
-                    <h2 class="title section__title contacts__title">Связаться с нами</h2>
-                    <div class="contacts__content">
-                        <form action="" method="post" class="form contacts__form">
-                            <input type="text" id="name" name="name" placeholder="Имя">
-                            <input type="number" id="phone" name="phone" placeholder="Номер телефона*">
-                            <input type="email" id="email" name="email" placeholder="E-mail*">
-                            <input type="text" id="product" name="product" placeholder="Интересующий товар/услуга">
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Сообщение*"></textarea>
-                            <p class="text contacts__text form__text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
-                            <button type="submit">Отправить<img src="./images/arrow-right-icon.svg" alt="Стрелка вправо"></button>
-                        </form>
-                        <!-- <div class="contacts__img-block">
-                            <img src="./images/contacts-img-1.png" alt="">
-                        </div> -->
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="container main-footer__container">
-                <div class="footer__logo-block">
-                    <a href="/" class="logo footer__logo">
-                        <img src="./images/logo-img.svg" alt="Логотип">
-                    </a>
-                </div>
-                <div class="footer__info-block">
-                    <h4 class="title footer__title">Информация</h4>
-                    <ul class="info-block__list">
-                        <li class="info-block__item">
-                            <a href="/">Главная</a>
-                        </li>
-                        <li class="info-block__item">
-                            <a href="#">Галерея</a>
-                        </li>
-                        <li class="info-block__item">
-                            <a href="#">Проекты</a>
-                        </li>
-                        <li class="info-block__item">
-                            <a href="#">Сертификаты</a>
-                        </li>
-                        <li class="info-block__item">
-                            <a href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__contact-block">
-                    <h4 class="title footer__title">Контакты</h4>
-                    <address class="footer__address">
-                        <a href="">100000, Республика  Казахстан г. Караганда, ул. Телевизионная 10</a>
-                    </address>
-                    <a href="tel:+380000000000" class="footer__phone">+38 (000) 000 00 00</a>
-                    <a href="mail:mail@gmail.com" class="footer__email">mail@gmail.com</a>
+            <div class="footer__contact-block">
+                <h4 class="title footer__title">Контакты</h4>
+                <address class="footer__address">
+                    <a href="">100000, Республика  Казахстан г. Караганда, ул. Телевизионная 10</a>
+                </address>
+                <a href="tel:+380000000000" class="footer__phone">+38 (000) 000 00 00</a>
+                <a href="mail:mail@gmail.com" class="footer__email">mail@gmail.com</a>
 
-                </div>
-                <div class="footer__social-block">
-                    <h4 class="title footer__title">Социальные сети</h4>
-                    <ul class="social-block__list">
-                        <li class="social-block__item">
-                            <a href="#">
-                                <img src="./images/facebook-icon.svg" alt="Facebook">
-                            </a>
-                        </li>
-                        <li class="social-block__item">
-                            <a href="#">
-                                <img src="./images/twitter-icon.svg" alt="Twitter">
-                            </a>
-                        </li>
-                        <li class="social-block__item">
-                            <a href="#">
-                                <img src="./images/linkedIn-icon.png" alt="LinkedIn">
-                            </a>
-                        </li>
-                        <li class="social-block__item">
-                            <a href="#">
-                                <img src="./images/pinterest-icon.svg" alt="Pinterest">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-            <div class="container copyright-footer__container">
-                <p class="text footer__text">© 2019 Digital Project. Все права защищены.</p>
+            <div class="footer__social-block">
+                <h4 class="title footer__title">Социальные сети</h4>
+                <ul class="social-block__list">
+                    <li class="social-block__item">
+                        <a href="#">
+                            <img src="./images/facebook-icon.svg" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="social-block__item">
+                        <a href="#">
+                            <img src="./images/twitter-icon.svg" alt="Twitter">
+                        </a>
+                    </li>
+                    <li class="social-block__item">
+                        <a href="#">
+                            <img src="./images/linkedIn-icon.png" alt="LinkedIn">
+                        </a>
+                    </li>
+                    <li class="social-block__item">
+                        <a href="#">
+                            <img src="./images/pinterest-icon.svg" alt="Pinterest">
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </footer>
-    </div>
+        </div>
+        <div class="container copyright-footer__container">
+            <p class="text footer__text">© 2019 Digital Project. Все права защищены.</p>
+        </div>
+    </footer>    
 </body>
 </html>
