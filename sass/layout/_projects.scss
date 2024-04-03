@@ -1,0 +1,42 @@
+.projects__list {
+    position: relative;
+    margin: 4em 0 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+.projects__item {
+    position: relative;
+    .hover-block {
+        display: none;
+        position: absolute;
+        top: 0;
+        padding: 2em 8%;
+        background-color: $bg-color-dark;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        h3 {
+            font-size: 3.5em;
+            font-weight: 700;
+            color: $color-primary;
+            margin-bottom: 0.2em;
+        }
+        a {
+            justify-content: flex-start;
+            padding: 0;
+        }
+    }
+    &:hover {
+        .hover-block {
+            display: block;
+        }
+    }
+}
+
+.projects__link-block {
+    display: flex;
+    justify-content: flex-end;
+}  

@@ -1,7 +1,7 @@
 //container
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -15,9 +15,11 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 15em;
+    max-width: 16em;
     width: 100%;
     padding: 1.8em 0;
+    font-size: $small-text;
+    letter-spacing: 0.2em;
     background-color: $color-primary;
     text-transform: uppercase;
     letter-spacing: 0.2em;

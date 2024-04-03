@@ -80,7 +80,7 @@ main {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -100,9 +100,11 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 15em;
+  max-width: 16em;
   width: 100%;
   padding: 1.8em 0;
+  font-size: 0.75em;
+  letter-spacing: 0.2em;
   background-color: #FFFFFF;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -365,4 +367,56 @@ section {
 .tasks__list li .text {
   font-size: 1.35em;
   line-height: 1.6;
+}
+
+.projects__list {
+  position: relative;
+  margin: 4em 0 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.5em;
+}
+
+.projects__item {
+  position: relative;
+}
+.projects__item .hover-block {
+  display: none;
+  position: absolute;
+  top: 0;
+  padding: 2em 8%;
+  background-color: #2C2C2C;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+.projects__item .hover-block h3 {
+  font-size: 3.5em;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.2em;
+}
+.projects__item .hover-block a {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+}
+.projects__item:hover .hover-block {
+  display: block;
+}
+
+.projects__link-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }/*# sourceMappingURL=main.css.map */
