@@ -160,11 +160,27 @@
                 <h2 class="title section__title contacts__title">Связаться с нами</h2>
                 <div class="contacts__content">
                     <form action="" method="post" class="form contacts__form">
-                        <input type="text" id="name" name="name" placeholder="Имя">
-                        <input type="number" id="phone" name="phone" placeholder="Номер телефона*">
-                        <input type="email" id="email" name="email" placeholder="E-mail*">
-                        <input type="text" id="product" name="product" placeholder="Интересующий товар/услуга">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Сообщение*"></textarea>
+                        <div class="input-wrapper">
+                            <input type="text" id="name" name="name">
+                            <span class="placeholder" data-placeholder="Имя"></span>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="number" id="phone" name="phone" required>
+                            <span class="placeholder required" data-placeholder="Номер телефона"></span>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="email" id="email" name="email" required>
+                            <span class="placeholder required" data-placeholder="E-mail"></span>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" id="product" name="product">
+                            <span class="placeholder" data-placeholder="Интересующий товар/услуга"></span>
+                        </div>
+                        <div class="textarea-wrapper">
+                            <textarea name="message" id="message" required></textarea>
+                            <span class="placeholder required" data-placeholder="Сообщение"></span>
+                            <img src="./images/tick-icon.svg" alt="Галочка">
+                        </div>
                         <p class="text contacts__text form__text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
                         <button type="submit" class="btn btn--dark">Отправить<img src="./images/white-arrow-right-icon.svg" alt="Стрелка вправо"></button>
                     </form>
@@ -176,10 +192,10 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container main-footer__container">
+        <div class="container footer__main-container">
             <div class="footer__logo-block">
                 <a href="/" class="logo footer__logo">
-                    <img src="./images/logo-img.svg" alt="Логотип">
+                    <img src="./images/footer-logo-img.svg" alt="Логотип">
                 </a>
             </div>
             <div class="footer__info-block">
@@ -237,8 +253,10 @@
                 </ul>
             </div>
         </div>
-        <div class="container copyright-footer__container">
-            <p class="text footer__text">© 2019 Digital Project. Все права защищены.</p>
+        <div class="footer__copyright">
+            <div class="container footer__copyright-container">
+                <p class="text footer__text">© 2019 Digital Project. Все права защищены.</p>
+            </div>
         </div>
     </footer>    
 </body>

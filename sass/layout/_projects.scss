@@ -9,6 +9,16 @@
 
 .projects__item {
     position: relative;
+
+    .img-block {
+        
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
     .hover-block {
         display: none;
         position: absolute;

@@ -1,0 +1,21 @@
+.footer {
+    background-color: $bg-color-dark;
+    &__main-container {
+        font-size: $form-footer-text;
+        color: $color-primary;
+        margin: 5em auto;
+        display: flex;
+    }
+    &__copyright{
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        
+    }
+    &__copyright-container {
+        margin: 1.5em auto;
+        p {
+            font-size: $small-text;
+            text-align: center;
+            color: $text-color-grey;
+        }
+    }
+}
