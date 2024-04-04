@@ -42,6 +42,7 @@ ul li {
 a {
   color: inherit;
   text-decoration: none;
+  font-style: normal;
 }
 
 button {
@@ -524,6 +525,18 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2em;
+  font-weight: 500;
+  line-height: 1.71429;
+  letter-spacing: 0.03em;
+}
+.footer__main-container .footer__block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 content;
+          flex: 0 1 content;
 }
 .footer__copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -535,4 +548,48 @@ section {
   font-size: 0.75em;
   text-align: center;
   color: #8D8D8D;
+}
+
+.footer__title {
+  font-weight: 700;
+  margin-bottom: 1.5em;
+}
+
+.footer__block-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5em;
+}
+
+.social-block__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2em;
+}
+
+.address__link {
+  position: relative;
+  padding-left: 2em;
+}
+.address__link::before {
+  position: absolute;
+  left: 0;
+}
+
+.footer__location::before {
+  content: url(../../images/map-point-icon.svg);
+}
+
+.footer__phone::before {
+  content: url(../../images/phone-icon.svg);
+}
+
+.footer__email::before {
+  content: url(../../images/email-icon.svg);
 }/*# sourceMappingURL=main.css.map */

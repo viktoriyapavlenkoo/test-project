@@ -5,6 +5,15 @@
         color: $color-primary;
         margin: 5em auto;
         display: flex;
+        justify-content: space-between;
+        gap: 2em;
+        font-weight: 500;
+        line-height: 1.71429;
+        letter-spacing: 0.03em;
+        .footer__block {
+            flex:0 1 content;
+        } 
+        
     }
     &__copyright{
         border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -18,4 +27,36 @@
             color: $text-color-grey;
         }
     }
+    
+}
+.footer__title {
+    font-weight: 700;margin-bottom: 1.5em;
+}
+
+.footer__block-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.social-block__list {
+    display: flex;
+    gap: 2em;
+}
+.address__link {
+    position: relative;
+    padding-left: 2em;
+    &::before{
+        position: absolute;
+        left: 0;
+    }
+}
+.footer__location::before {
+    content: url(../../images/map-point-icon.svg);
+}
+.footer__phone::before {
+    content: url(../../images/phone-icon.svg);
+}
+.footer__email::before {
+    content: url(../../images/email-icon.svg);
 }
