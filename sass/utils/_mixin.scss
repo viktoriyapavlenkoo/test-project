@@ -10,7 +10,7 @@
 
 @mixin responsive($breakpoint) {
     @if $breakpoint == laptop {
-        @media screen and (max-width: 1200px)  {
+        @media screen and (max-height: 865px)  {
         @content;
       }
     } @else if $breakpoint == tablet-land {
