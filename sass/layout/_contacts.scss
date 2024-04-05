@@ -1,9 +1,10 @@
 .contacts__content {
     display: flex;
+    align-items: flex-start;
+    margin-top: 1.5em;
     gap: 2rem;
     .img-block {
         img {
-            height: 100%;
             width: 100%;
             object-fit: contain;
         }

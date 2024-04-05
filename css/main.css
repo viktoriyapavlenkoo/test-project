@@ -57,6 +57,16 @@ button {
 html {
   font-size: 100%;
 }
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 85%;
+  }
+}
+@media screen and (max-height: 865px) {
+  html {
+    font-size: 85%;
+  }
+}
 
 body {
   font-family: "TT Hoves";
@@ -89,13 +99,9 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 section {
   margin-bottom: 6rem;
-}
-@media screen and (max-height: 865px) {
-  section {
-    max-height: 90vh;
-  }
 }
 
 .btn {
@@ -149,9 +155,14 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 1200px) {
+  .header__container {
+    height: 12vh;
+  }
+}
 @media screen and (max-height: 865px) {
   .header__container {
-    height: 10vh;
+    height: 12vh;
   }
 }
 
@@ -212,10 +223,16 @@ section {
 
 .hero {
   margin-top: 6rem;
+  height: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .hero {
+    margin-top: 12vh;
+  }
 }
 @media screen and (max-height: 865px) {
   .hero {
-    margin-top: 10vh;
+    margin-top: 12vh;
   }
 }
 .hero__container {
@@ -223,6 +240,23 @@ section {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  .hero__container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+}
+@media screen and (max-height: 865px) {
+  .hero__container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
 }
 .hero .hero__first-block {
   display: -webkit-box;
@@ -239,16 +273,56 @@ section {
 }
 .hero .hero__second-block {
   position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 content;
+          flex: 0 1 content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .hero .hero__second-block {
+    max-height: 85vh;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-height: 865px) {
+  .hero .hero__second-block {
+    max-height: 85vh;
+    height: 100%;
+    width: 100%;
+  }
 }
 .hero .hero__second-block .img-block img {
-  height: 90vh;
+  height: 100%;
   width: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 1200px) {
+  .hero .hero__second-block .img-block img {
+    max-height: 85vh;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-height: 865px) {
+  .hero .hero__second-block .img-block img {
+    max-height: 85vh;
+    height: 100%;
+    width: 100%;
+  }
 }
 .hero .hero__second-block a {
   position: absolute;
   bottom: 0;
+  left: 0;
 }
 
 .hero__title {
@@ -386,18 +460,22 @@ section {
   line-height: 1.6;
 }
 
+.projects__lists {
+  margin: 4em 0 2em;
+}
+
 .projects__list {
   position: relative;
-  margin: 4rem 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 1.5rem;
+}
+.projects__list:first-child {
+  margin-bottom: 1.5rem;
 }
 
 .projects__item {
@@ -448,10 +526,13 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 1.5em;
   gap: 2rem;
 }
 .contacts__content .img-block img {
-  height: 100%;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;

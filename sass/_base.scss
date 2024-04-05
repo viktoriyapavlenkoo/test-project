@@ -32,9 +32,9 @@ button {
 //main styles
 html {
     font-size: 100%;
-    // @include responsive(laptop) {
-    //     font-size: 90%;
-    // }
+    @include responsive(laptop) {
+        font-size: 85%;
+    }
     // @include responsive(tablet-land) {
     //     font-size: 80%;
     // }

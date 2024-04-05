@@ -1,11 +1,17 @@
 .hero {   
     margin-top: 6rem;
+    height: 100%;
     @include responsive(laptop) {
-        margin-top: 10vh;
+        margin-top: 12vh;
     }
     &__container {
         display: flex;
         gap: 1rem;
+        justify-content: space-between;
+        @include responsive(laptop) {
+            justify-content: space-around;
+            width: 100%;
+        }
         
     }
 
@@ -21,14 +27,34 @@
 
     .hero__second-block {
         position: relative;
-        .img-block img {
-            height: 90vh;
+        flex: 0 1 content;
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+        @include responsive(laptop) {
+            max-height: 85vh;
+            height:100%;
             width: 100%;
-            object-fit: fill;
+        }
+        
+        .img-block img {
+            
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            @include responsive(laptop) {
+                max-height: 85vh;
+                height:100%;
+                width: 100%;
+            }
+            
         }
         a {
             position: absolute;
             bottom: 0;
+            left: 0;
+            
         }
     }
 }
