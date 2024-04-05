@@ -3,15 +3,15 @@
     &__main-container {
         font-size: $form-footer-text;
         color: $color-primary;
-        margin: 5em auto;
+        margin: 5rem auto;
         display: flex;
         justify-content: space-between;
-        gap: 2em;
+        gap: 2rem;
         font-weight: 500;
         line-height: 1.71429;
         letter-spacing: 0.03em;
         .footer__block {
-            flex:0 1 content;
+            flex: 0 1 content;
         } 
         
     }
@@ -20,7 +20,7 @@
         
     }
     &__copyright-container {
-        margin: 1.5em auto;
+        margin: 1.5rem auto;
         p {
             font-size: $small-text;
             text-align: center;
@@ -30,22 +30,23 @@
     
 }
 .footer__title {
-    font-weight: 700;margin-bottom: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
 }
 
 .footer__block-column {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1.5rem;
 }
 
 .social-block__list {
     display: flex;
-    gap: 2em;
+    gap: 2rem;
 }
 .address__link {
     position: relative;
-    padding-left: 2em;
+    padding-left: 2rem;
     &::before{
         position: absolute;
         left: 0;
