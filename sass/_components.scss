@@ -5,11 +5,16 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-    
+    @include responsive(laptop) {
+        
+    }
 }
 
 section {
     margin-bottom: 6rem;
+    @include responsive(laptop) {
+        max-height: 90vh;
+    }
 }
 //buttons
 .btn {

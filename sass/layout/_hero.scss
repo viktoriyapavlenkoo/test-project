@@ -1,5 +1,8 @@
 .hero {   
     margin-top: 6rem;
+    @include responsive(laptop) {
+        margin-top: 10vh;
+    }
     &__container {
         display: flex;
         gap: 1rem;
@@ -19,7 +22,7 @@
     .hero__second-block {
         position: relative;
         .img-block img {
-            height: 100%;
+            height: 90vh;
             width: 100%;
             object-fit: fill;
         }
