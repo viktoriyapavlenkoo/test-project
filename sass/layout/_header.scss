@@ -3,21 +3,22 @@
     width: 100%;
     background-color: $color-primary;
     z-index: 5;
+    height: 6em;
     &__container {
         display: flex;
         align-items: center;
-        height: 6em;
+        height: 100%;
         justify-content: space-between;
     }
 }
 
 .menu {
     display: flex;
-    max-width: 645px;
+    max-width: 40rem;
     width: 100%;
     justify-content: space-between;
-    gap: 1em;
-    margin: 0 6em;
+    gap: 1rem;
+    margin: 0 6rem;
     &__item--active {
         a {
             &::before {
