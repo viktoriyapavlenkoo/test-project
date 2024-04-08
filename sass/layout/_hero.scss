@@ -1,4 +1,4 @@
-.hero {   
+.hero {  
     margin-top: 6rem;
     height: 100%;
     @include responsive(laptop) {
@@ -12,6 +12,10 @@
             justify-content: space-around;
             width: 100%;
         }
+        @include responsive(phone) {
+            flex-direction: column;
+            padding-top: 1em;
+        }
         
     }
 
@@ -20,9 +24,14 @@
         flex-direction: column;
         gap: 4rem;
         align-self: flex-end;
+
         margin-bottom: 10%;
-
-
+        @include responsive(phone) {
+            align-self: flex-start;
+            gap: 1rem;
+            margin: 0
+            //align-items: center;
+        }
     }
 
     .hero__second-block {
@@ -61,19 +70,31 @@
 
 
 .hero__title {
+    max-width: 300px;
+    width: 100%;
     text-transform: uppercase;
     span {
         font-weight: 700;
         color: $text-color-primary;
     }
+    @include responsive(tablet-port) {
+        //font-size: 3rem;
+    }
 }
-
+.slider-block {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    @include responsive(phone) {
+        flex-direction: row;
+        align-items: center;
+    }
+}
 .hero__btns {
     display: flex;
     
     button {
-        width: 53px;
-        height: 53px;
+        padding: 1rem;
         border: 1px solid $bg-color-grey;
         &:first-child {
             margin-right: 1rem;
@@ -94,10 +115,10 @@
         position: absolute;
         display: block;
         background-color: $title-color;
-        width: 40px;
+        width: 2rem;
         height: 1px;
-        top: 10px;
-        left: 1.5rem;
+        top: 45%;
+        left: 2.5rem;
         transform: rotate(135deg);
     }
     

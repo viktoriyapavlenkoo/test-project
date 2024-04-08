@@ -67,6 +67,11 @@ html {
     font-size: 85%;
   }
 }
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 60%;
+  }
+}
 
 body {
   font-family: "TT Hoves";
@@ -309,6 +314,15 @@ section {
     width: 100%;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 1em;
+  }
+}
 .hero .hero__first-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,6 +335,14 @@ section {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-bottom: 10%;
+}
+@media screen and (max-width: 480px) {
+  .hero .hero__first-block {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    gap: 1rem;
+    margin: 0;
+  }
 }
 .hero .hero__second-block {
   position: relative;
@@ -377,11 +399,34 @@ section {
 }
 
 .hero__title {
+  max-width: 300px;
+  width: 100%;
   text-transform: uppercase;
 }
 .hero__title span {
   font-weight: 700;
   color: #000000;
+}
+.slider-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3em;
+}
+@media screen and (max-width: 480px) {
+  .slider-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .hero__btns {
@@ -390,8 +435,7 @@ section {
   display: flex;
 }
 .hero__btns button {
-  width: 53px;
-  height: 53px;
+  padding: 1rem;
   border: 1px solid #F3F3F3;
 }
 .hero__btns button:first-child {
@@ -414,10 +458,10 @@ section {
   position: absolute;
   display: block;
   background-color: #BDBDBD;
-  width: 40px;
+  width: 2rem;
   height: 1px;
-  top: 10px;
-  left: 1.5rem;
+  top: 45%;
+  left: 2.5rem;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }

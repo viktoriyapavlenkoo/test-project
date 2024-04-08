@@ -26,11 +26,11 @@
         @media screen and (max-width: 768px) {
         @content;
       }
-    } @else if $breakpoint == phone {
+    } @else if $breakpoint == small-tablet {
         @media screen and (max-width: 650px) {
           @content;
         }
-      } @else if $breakpoint == small-phone {
+      } @else if $breakpoint == phone {
         @media screen and (max-width: 480px) {
           @content;
         }
