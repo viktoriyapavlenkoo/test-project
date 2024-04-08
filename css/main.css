@@ -62,11 +62,6 @@ html {
     font-size: 85%;
   }
 }
-@media screen and (max-height: 865px) {
-  html {
-    font-size: 85%;
-  }
-}
 @media screen and (max-width: 650px) {
   html {
     font-size: 60%;
@@ -106,7 +101,7 @@ body {
 }
 
 section {
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
 .btn {
@@ -300,13 +295,6 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (max-width: 1200px) {
-  .hero__container {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 100%;
-  }
-}
 @media screen and (max-height: 865px) {
   .hero__container {
     -ms-flex-pack: distribute;
@@ -358,13 +346,6 @@ section {
   height: 100%;
   width: 100%;
 }
-@media screen and (max-width: 1200px) {
-  .hero .hero__second-block {
-    max-height: 85vh;
-    height: 100%;
-    width: 100%;
-  }
-}
 @media screen and (max-height: 865px) {
   .hero .hero__second-block {
     max-height: 85vh;
@@ -377,13 +358,6 @@ section {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-@media screen and (max-width: 1200px) {
-  .hero .hero__second-block .img-block img {
-    max-height: 85vh;
-    height: 100%;
-    width: 100%;
-  }
 }
 @media screen and (max-height: 865px) {
   .hero .hero__second-block .img-block img {
@@ -479,6 +453,13 @@ section {
   padding: 2rem;
 }
 
+.company__img-block,
+.company__text-block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
 .company__img-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,21 +467,29 @@ section {
   margin-left: 4rem;
   gap: 2rem;
 }
+@media screen and (max-width: 1200px) {
+  .company__img-block {
+    display: none;
+  }
+}
 .company__img-block .first-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2rem;
 }
-.company__img-block .first-block .img-block:last-child {
-  position: absolute;
-  bottom: -2rem;
-}
 .company__img-block .second-block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: 100%;
   margin-top: 2rem;
 }
 
