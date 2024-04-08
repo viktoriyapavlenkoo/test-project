@@ -2,7 +2,7 @@
     margin-top: 6rem;
     height: 100%;
     @include responsive(laptop) {
-        margin-top: 12vh;
+        // margin-top: 12vh;
     }
     &__container {
         display: flex;
