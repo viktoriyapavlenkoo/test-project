@@ -44,9 +44,9 @@ html {
     // @include responsive(phone) {
     //     font-size: 60%;
     // }
-    // @include responsive(small-phone) {
-    //     font-size: 50%;
-    // }
+    @include responsive(small-tablet) {
+        font-size: 60%;
+    }
 }
 
 body {
