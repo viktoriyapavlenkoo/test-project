@@ -12,12 +12,13 @@
     @if $breakpoint == laptop {
         @media screen and (max-width: 1200px) {
         @content;
-        
-      }
-      @media screen and (max-height: 865px) {
+        }
+
+
+    } @else if $breakpoint == small-laptop {
+        @media screen and (max-height: 865px) {
         @content;
-        
-      }
+        }
     } @else if $breakpoint == tablet-land {
         @media screen and (max-width: 992px) {
         @content;

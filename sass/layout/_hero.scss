@@ -8,7 +8,7 @@
         display: flex;
         gap: 1rem;
         justify-content: space-between;
-        @include responsive(laptop) {
+        @include responsive(small-laptop) {
             justify-content: space-around;
             width: 100%;
         }
@@ -41,7 +41,7 @@
         justify-content: flex-start;
         height: 100%;
         width: 100%;
-        @include responsive(laptop) {
+        @include responsive(small-laptop) {
             max-height: 85vh;
             height:100%;
             width: 100%;
@@ -52,7 +52,7 @@
             height: 100%;
             width: 100%;
             object-fit: contain;
-            @include responsive(laptop) {
+            @include responsive(small-laptop) {
                 max-height: 85vh;
                 height:100%;
                 width: 100%;
