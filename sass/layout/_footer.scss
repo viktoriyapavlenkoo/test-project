@@ -10,8 +10,13 @@
         font-weight: 500;
         line-height: 1.71429;
         letter-spacing: 0.03em;
+        @include responsive(tablet-port) {
+            flex-direction: column;
+            font-size: $main-text;
+            
+        }
         .footer__block {
-            flex: 0 1 content;
+            flex: 0 1 auto;
         } 
         
     }
@@ -22,7 +27,6 @@
     &__copyright-container {
         margin: 1.5rem auto;
         p {
-            font-size: $small-text;
             text-align: center;
             color: $text-color-grey;
         }
@@ -32,14 +36,36 @@
 .footer__title {
     font-weight: 700;
     margin-bottom: 1.5rem;
+   
+}
+.footer__option-title {
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+    @include responsive(tablet-port) {
+        cursor: pointer;
+        margin-bottom: 0;
+    }
+    img {
+        display: none;
+        @include responsive(tablet-port) {
+            display: block;
+        }
+    }
 }
 
 .footer__block-column {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    @include responsive(tablet-port) {
+        display: none;
+    }
 }
-
+.open {
+    display: flex;
+    margin: 1rem 0 0 1rem;
+}
 .social-block__list {
     display: flex;
     gap: 2rem;
