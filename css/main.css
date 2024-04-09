@@ -506,13 +506,24 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 2rem;
+  gap: 1em;
   margin-top: 2.5rem;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media screen and (max-width: 768px) {
+  .tasks__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .tasks__list li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 content;
+          flex: 0 1 content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,15 +532,12 @@ section {
           align-items: center;
   gap: 2rem;
 }
-.tasks__list li:first-child {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 35%;
-          flex: 0 1 35%;
-}
-.tasks__list li:last-child {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+@media screen and (max-width: 992px) {
+  .tasks__list li:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+  }
 }
 .tasks__list li .tasks__number {
   padding: 0;
@@ -537,13 +545,16 @@ section {
   font-size: 12.5rem;
   font-weight: 900;
   color: #F3F3F3;
-  height: 100%;
+}
+@media screen and (max-width: 992px) {
+  .tasks__list li .tasks__number {
+    font-size: 10em;
+  }
 }
 .tasks__list li .text {
   font-size: 1.35rem;
   line-height: 1.6;
 }
-
 .projects__lists {
   margin: 4em 0 2em;
 }
