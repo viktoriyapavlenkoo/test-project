@@ -114,9 +114,10 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 14rem;
+  max-width: 15rem;
   width: 100%;
-  padding: 1.8rem 0;
+  padding: 1.5rem 0;
+  line-height: 0;
   font-size: 0.75rem;
   letter-spacing: 0.2em;
   background-color: #FFFFFF;
@@ -129,10 +130,11 @@ section {
 .btn--dark {
   color: #FFFFFF;
   background-color: #2C2C2C;
+  padding: 1rem 0;
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 300;
   color: #BDBDBD;
 }
@@ -521,9 +523,6 @@ section {
   }
 }
 .tasks__list li {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 content;
-          flex: 0 1 content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,12 +531,22 @@ section {
           align-items: center;
   gap: 2rem;
 }
+.tasks__list li:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 35%;
+          flex: 0 0 35%;
+}
 @media screen and (max-width: 992px) {
   .tasks__list li:first-child {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 40%;
             flex: 0 0 40%;
   }
+}
+.tasks__list li:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
 }
 .tasks__list li .tasks__number {
   padding: 0;
@@ -569,8 +578,21 @@ section {
           justify-content: space-between;
   gap: 1.5rem;
 }
+@media screen and (max-width: 768px) {
+  .projects__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .projects__list:first-child {
   margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .projects__list:last-child {
+    display: none;
+  }
 }
 
 .projects__item {
@@ -593,10 +615,15 @@ section {
   opacity: 0.8;
 }
 .projects__item .hover-block h3 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #FFFFFF;
   margin-bottom: 0.2rem;
+}
+@media screen and (max-width: 992px) {
+  .projects__item .hover-block h3 {
+    font-size: 2.5rem;
+  }
 }
 .projects__item .hover-block a {
   -webkit-box-pack: start;

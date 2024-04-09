@@ -16,9 +16,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 14rem;
+    max-width: 15rem;
     width: 100%;
-    padding: 1.8rem 0;
+    padding: 1.5rem 0;
+    line-height: 0;
     font-size: $small-text;
     letter-spacing: 0.2em;
     background-color: $color-primary;
@@ -31,6 +32,7 @@ section {
 .btn--dark {
     color: $color-primary;
     background-color: $bg-color-dark;
+    padding: 1rem 0;
 }
 
 //title
