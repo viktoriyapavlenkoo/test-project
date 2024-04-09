@@ -15,13 +15,13 @@
     }
     li {
         
-        flex: 0 1 content;
+        //flex: 0 1 50%;
         display: flex;
         align-items: center;
         //justify-content: center;
         gap: 2rem;
         &:first-child {
-            //flex: 0 0 35%;
+            flex: 0 0 35%;
             @include responsive(tablet-land) {
                 flex: 0 0 40%;
             }
@@ -30,7 +30,7 @@
             }
         }
         &:last-child {
-           //flex: 0 1 65%;
+           flex: 0 1 60%;
            @include responsive(tablet-land) {
             //flex: 0 1 60%;
             @include responsive(small-tablet) {
