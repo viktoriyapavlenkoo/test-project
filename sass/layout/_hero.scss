@@ -101,6 +101,10 @@
         &:first-child {
             margin-right: 1rem;
         }
+        &:disabled {
+            background-color: $bg-color-grey;
+            opacity: 0.7;
+        }
     }
 }
 

@@ -89,6 +89,7 @@ infoBlock.onclick = function() {
 const prevBtn = document.querySelector('.prev-btn')
 const nextBtn = document.querySelector('.next-btn')
 
+console.dir(prevBtn)
 fetch('slides.json')
     .then(response => response.json())
     .then(response => {
@@ -102,12 +103,18 @@ fetch('slides.json')
         prevBtn.onclick = function() {
             if(id > 1) {
                 displaySlide(--id)
+                nextBtn.removeAttribute('disabled')
+            } else {
+                this.setAttribute('disabled', '')
             }
         }
         nextBtn.onclick = function() {
             
             if(id < response.length) {
                 displaySlide(++id)
+                prevBtn.removeAttribute('disabled')
+            } else {
+                this.setAttribute('disabled', '')
             }
         }
        // displaySlide(response[0])
