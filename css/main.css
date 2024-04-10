@@ -709,6 +709,7 @@ section {
   width: 100%;
   background-color: #F3F3F3;
   border: none;
+  font-size: 1rem;
   letter-spacing: 0.04em;
   color: #8D8D8D;
 }
@@ -723,15 +724,12 @@ section {
   content: attr(data-placeholder);
   color: #8D8D8D;
 }
-.input-wrapper .required::after, .textarea-wrapper .required::after {
+.input-wrapper .empty::after, .textarea-wrapper .empty::after {
   content: "*";
   color: #C30000;
 }
 
-.input-wrapper input:focus + .placeholder {
-  display: none;
-}
-
+.input-wrapper input:focus + .placeholder,
 .textarea-wrapper textarea:focus + .placeholder {
   display: none;
 }
