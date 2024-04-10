@@ -60,3 +60,62 @@ infoBlock.onclick = function() {
 }
 
 
+//slider-logic
+
+
+// let sliderDataMap;
+
+// getJsonData()
+
+// async function getJsonData() {
+//     fetch('slides.json')
+//     .then(response => response.json())
+//     .then(response => initSliderData(response));
+// }
+
+// async function initSliderData(jsonData) {
+//     sliderDataMap = new Map();
+//     for (let data of jsonData) {
+//         sliderDataMap.set(data.id, data.imageUrl)
+//     }
+//     console.log('done')
+//     console.log(sliderDataMap);
+// }
+
+// i()
+// console.log(sliderDataMap)
+
+// document.addEventListener('DOMContentLoaded', getJsonData)
+const prevBtn = document.querySelector('.prev-btn')
+const nextBtn = document.querySelector('.next-btn')
+
+fetch('slides.json')
+    .then(response => response.json())
+    .then(response => {
+        //console.log(response)
+        let id = response[0].id;
+        // for(let i = 0; i < response.length; i++) {
+        //     let id = response[i].id;
+        //     displaySlide(id)
+        // }
+        displaySlide(id)
+        prevBtn.onclick = function() {
+            if(id > 1) {
+                displaySlide(--id)
+            }
+        }
+        nextBtn.onclick = function() {
+            
+            if(id < response.length) {
+                displaySlide(++id)
+            }
+        }
+       // displaySlide(response[0])
+    
+    
+    });
+
+function displaySlide(response) {
+    console.log(response)
+
+}
