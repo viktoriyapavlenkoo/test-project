@@ -117,12 +117,12 @@ fetch('slides.json')
         }
         nextBtn.onclick = function() {
             
-            if(id < response.length) {
+            if(id < response.length-1) {
                 displaySlide(response, ++id)
                 initPageSlides(id)
                 prevBtn.removeAttribute('disabled')
             } 
-            if(id == response.length) {
+            if(id == response.length-1) {
                 this.setAttribute('disabled', '')
             }
         }
