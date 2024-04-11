@@ -1,11 +1,12 @@
-@mixin lines-psevdoelement($top: -4px) {
+@mixin lines-psevdoelement($top, $width: 0) {
     content: '';
     position: absolute;
     display: block;
     background-color: $text-color-primary;
-    width: 100%;
+    width: $width;
     height: 1px;
     top: $top;
+    transition: width 0.5s ease;
 }
 
 @mixin responsive($breakpoint) {
