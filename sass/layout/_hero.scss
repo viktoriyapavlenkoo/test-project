@@ -1,9 +1,6 @@
 .hero {  
     margin-top: 6rem;
     height: 100%;
-    @include responsive(laptop) {
-        // margin-top: 12vh;
-    }
     &__container {
         display: flex;
         gap: 1rem;
@@ -16,9 +13,7 @@
             flex-direction: column;
             padding-top: 1em;
         }
-        
     }
-
     .hero__first-block {
         display: flex;
         flex-direction: column;
@@ -29,18 +24,13 @@
         @include responsive(phone) {
             align-self: flex-start;
             gap: 1rem;
-            margin: 0
-            //align-items: center;
-        }
+            margin: 0;        }
     }
-
     .hero__second-block {
         position: relative;
         flex: 0 1 content;
         display: flex;
         justify-content: flex-start;
-        // max-height: 830px;
-        // max-width: 770px;
         height: 100%;
         width: 100%;
         @include responsive(small-laptop) {
@@ -48,9 +38,7 @@
             height: 100%;
             width: 100%;
         }
-        
         .img-block img {
-            
             height: 100%;
             width: 100%;
             object-fit: contain;
@@ -59,7 +47,6 @@
                 height:100%;
                 width: 100%;
             }
-            
         }
         a {
             position: absolute;
@@ -70,7 +57,6 @@
     }
 }
 
-
 .hero__title {
     max-width: 300px;
     width: 100%;
@@ -79,10 +65,8 @@
         font-weight: 700;
         color: $text-color-primary;
     }
-    @include responsive(tablet-port) {
-        //font-size: 3rem;
-    }
 }
+
 .slider-block {
     display: flex;
     flex-direction: column;
@@ -92,9 +76,9 @@
         align-items: center;
     }
 }
+
 .hero__btns {
     display: flex;
-    
     button {
         padding: 1rem;
         border: 1px solid $bg-color-grey;
@@ -105,28 +89,7 @@
             background-color: $bg-color-grey;
             opacity: 0.5;
             cursor: auto;
-            // &:hover,
-            // &:focus {
-            //     color: inherit;
-            //     background-color: inherit;
-            //     svg {
-            //         path {
-            //             fill: inherit;
-            //         }
-            //     }
-            // }
         }
-        // &:disabled:hover, 
-        // &:disabled:focus {
-        //     background-color: $bg-color-grey;
-        //     opacity: 0.7;
-        //     svg {
-        //         path {
-        //                 fill: #000000;
-        //                 opacity: 0.5;
-        //             }
-        //     }
-        // }
         &:not([disabled]):hover {
             color: $color-primary;
             background-color: $bg-color-dark;
@@ -139,8 +102,6 @@
                 }
             }
         }
-        
-        
     }
 }
 
@@ -163,5 +124,4 @@
         left: 2.5rem;
         transform: rotate(135deg);
     }
-    
 }

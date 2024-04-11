@@ -124,6 +124,9 @@ section {
   background-color: #FFFFFF;
   text-transform: uppercase;
 }
+.btn svg {
+  margin-left: 0.8rem;
+}
 .btn:hover, .btn:focus {
   color: #FFFFFF;
   background-color: #2C2C2C;
@@ -134,9 +137,6 @@ section {
   fill: #FFFFFF;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-.btn svg {
-  margin-left: 0.8rem;
 }
 
 .btn--dark {
@@ -230,7 +230,6 @@ section {
 .menu__item a:hover::after, .menu__item a:focus::after {
   width: 100%;
 }
-
 .menu__item--active a::before {
   content: "";
   position: absolute;
@@ -260,7 +259,6 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   z-index: 5;
   width: 100%;
   height: 100%;
@@ -276,7 +274,6 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 1rem;
-  overflow: scroll;
 }
 .smartfon-menu .menu__item a {
   font-size: 150%;

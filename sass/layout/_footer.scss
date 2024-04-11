@@ -13,16 +13,13 @@
         @include responsive(tablet-port) {
             flex-direction: column;
             font-size: $main-text;
-            
         }
         .footer__block {
             flex: 0 1 auto;
         } 
-        
     }
     &__copyright{
         border-top: 1px solid rgba(255, 255, 255, 0.1);
-        
     }
     &__copyright-container {
         margin: 1.5rem auto;
@@ -31,13 +28,13 @@
             color: $text-color-grey;
         }
     }
-    
 }
+
 .footer__title {
     font-weight: 700;
     margin-bottom: 1.5rem;
-   
 }
+
 .footer__option-title {
     display: flex;
     gap: 1em;
@@ -62,14 +59,17 @@
         display: none;
     }
 }
+
 .open {
     display: flex;
     margin: 1rem 0 0 1rem;
 }
+
 .social-block__list {
     display: flex;
     gap: 2rem;
 }
+
 .address__link {
     position: relative;
     padding-left: 2rem;
@@ -78,12 +78,15 @@
         left: 0;
     }
 }
+
 .footer__location::before {
     content: url(../../images/map-point-icon.svg);
 }
+
 .footer__phone::before {
     content: url(../../images/phone-icon.svg);
 }
+
 .footer__email::before {
     content: url(../../images/email-icon.svg);
 }

@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
     font-weight: inherit;
 }
+
 ul li {
     list-style: none;
 }
@@ -31,20 +32,12 @@ button {
 }
 
 //main styles
+
 html {
     font-size: 100%;
     @include responsive(laptop) {
         font-size: 85%;
     }
-    // @include responsive(tablet-land) {
-    //     font-size: 80%;
-    // }
-    // @include responsive(tablet-port) {
-    //     font-size: 70%;
-    // }
-    // @include responsive(phone) {
-    //     font-size: 60%;
-    // }
     @include responsive(small-tablet) {
         font-size: 70%;
     }
@@ -57,11 +50,13 @@ body {
     background-color: $color-primary;
     color: $text-color-primary;
 }
+
 .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
 .main {
     flex: 1;
 }
