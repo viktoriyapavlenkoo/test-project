@@ -86,34 +86,43 @@ infoBlock.onclick = function() {
 // console.log(sliderDataMap)
 
 // document.addEventListener('DOMContentLoaded', getJsonData)
-const prevBtn = document.querySelector('.prev-btn')
+const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn')
+const sliderImgBlock = document.querySelector('.slider-img-block');
+const currentSlide = document.querySelector('.slides__current');
+const allSlides = document.querySelector('.slides__all');
 
-console.dir(prevBtn)
 fetch('slides.json')
     .then(response => response.json())
     .then(response => {
         //console.log(response)
         let id = response[0].id;
+        // let elem = response[id-1];
+        //console.log(elem)
         // for(let i = 0; i < response.length; i++) {
         //     let id = response[i].id;
         //     displaySlide(id)
         // }
-        displaySlide(id)
+        displaySlide(response, id);
+        initAllSlides(response)
         prevBtn.onclick = function() {
             if(id > 1) {
-                displaySlide(--id)
+                displaySlide(response, --id)
+                initPageSlides(id)
                 nextBtn.removeAttribute('disabled')
-            } else {
+            } 
+            if(id == 1) {
                 this.setAttribute('disabled', '')
             }
         }
         nextBtn.onclick = function() {
             
             if(id < response.length) {
-                displaySlide(++id)
+                displaySlide(response, ++id)
+                initPageSlides(id)
                 prevBtn.removeAttribute('disabled')
-            } else {
+            } 
+            if(id == response.length) {
                 this.setAttribute('disabled', '')
             }
         }
@@ -122,7 +131,35 @@ fetch('slides.json')
     
     });
 
-function displaySlide(response) {
-    console.log(response)
+function displaySlide(data, id) {
+    let index = id;
+    index--;
+    const elem = data[index]
+    //console.log(elem);
+    //console.log(id);
+    sliderImgBlock.innerHTML = ''
+    const img = document.createElement('img');
+    img.setAttribute('src', elem.imageUrl);
+    img.setAttribute('alt', elem.alt);
+    //console.log(img)
+    sliderImgBlock.append(img)
 
+
+}
+
+function initPageSlides(id) { 
+    if(id < 10) {
+        currentSlide.textContent = '0' + id;
+    } else {
+        currentSlide.textContent = id;
+    }
+}
+
+function initAllSlides(data) { 
+    let countSlides = data.length++;
+    if(data.length < 10) {
+        allSlides.textContent = '0' + countSlides;
+    } else {
+        allSlides.textContent = countSlides;
+    }
 }

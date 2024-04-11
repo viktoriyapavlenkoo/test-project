@@ -104,6 +104,7 @@
         &:disabled {
             background-color: $bg-color-grey;
             opacity: 0.7;
+            cursor: auto;
         }
     }
 }
