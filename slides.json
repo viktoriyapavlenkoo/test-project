@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "imageUrl": "images/home-img-1.png",
+        "alt": "Изображение проекта здания. Слайд 1."
+    },
+    {
+        "id": "2",
+        "imageUrl": "images/home-img-2.png",
+        "alt": "Изображение проекта здания. Слайд 2."
+    },
+    {
+        "id": "3",
+        "imageUrl": "images/home-img-3.png",
+        "alt": "Изображение проекта здания. Слайд 3."
+    },
+    {
+        "id": "4",
+        "imageUrl": "images/home-img-4.png",
+        "alt": "Изображение проекта здания. Слайд 4."
+    }
+]

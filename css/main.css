@@ -417,6 +417,11 @@ section {
 .hero__btns button:first-child {
   margin-right: 1rem;
 }
+.hero__btns button:disabled {
+  background-color: #F3F3F3;
+  opacity: 0.7;
+  cursor: auto;
+}
 
 .slides {
   position: relative;
