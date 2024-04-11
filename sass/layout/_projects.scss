@@ -39,6 +39,7 @@
         width: 100%;
         height: 100%;
         opacity: 0.8;
+        //transition: all 1s ease;
         h3 {
             font-size: 3rem;
             font-weight: 700;
@@ -67,8 +68,10 @@
         }
     }
     &:hover {
+        //transition: all 1s ease;
         .hover-block {
             display: block;
+            //transition: display 1s ease;
         }
     }
 }

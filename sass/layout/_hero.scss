@@ -127,8 +127,7 @@
         //             }
         //     }
         // }
-        &:not([disabled]):hover,
-        &:not([disabled]):focus {
+        &:not([disabled]):hover {
             color: $color-primary;
             background-color: $bg-color-dark;
             transition: all 0.5s ease;
@@ -136,6 +135,7 @@
                 path {
                     fill: $color-primary;
                     transition: all 0.5s ease;
+                    
                 }
             }
         }
