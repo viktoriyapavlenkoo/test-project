@@ -18,12 +18,13 @@ a {
     color: inherit;
     text-decoration: none;
     font-style: normal;
+    border: 1px solid transparent;
 }
 
 button {
     cursor: pointer;
-    border: none;
     background-color: transparent;
+    border: 1px solid transparent;
     font-family: inherit;
     font-size: inherit;
     color: inherit;

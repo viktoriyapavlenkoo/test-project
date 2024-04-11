@@ -24,43 +24,18 @@
         @include responsive(tablet-port) {
             display: none;
         }
-        .menu__item--active {
-            a {
-                &::before {
-                    @include lines-psevdoelement;
-                }
-                &::after {
-                    @include lines-psevdoelement(1.4em);
-                }
-            }
-           
-        }
-        // a {
-        //     position: relative;
-        //     font-size: $small-text;
-        //     letter-spacing: 0.2em;
-        //     text-transform: uppercase;
-            
-        //     &:hover::before,
-        //     &:focus::before{
-        //         @include lines-psevdoelement;
-        //     }
-        //     &:hover::after,
-        //     &:focus::after {
-        //         @include lines-psevdoelement(1.4em);
-        //     }
-            
-        // }
     }
 }
 .menu__item {
     &--active {
         a {
             &::before {
-                @include lines-psevdoelement;
+                @include lines-psevdoelement();
+                
             }
             &::after {
                 @include lines-psevdoelement(1.4em);
+               
             }
         }
        
@@ -70,15 +45,15 @@
         font-size: $small-text;
         letter-spacing: 0.2em;
         text-transform: uppercase;
-        
         &:hover::before,
         &:focus::before{
-            @include lines-psevdoelement;
+            @include lines-psevdoelement();          
         }
         &:hover::after,
         &:focus::after {
-            @include lines-psevdoelement(1.4em);
+            @include lines-psevdoelement( 1.4em);   
+                   
         }
-        
     }
+    
 }
