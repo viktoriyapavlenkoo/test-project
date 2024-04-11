@@ -440,13 +440,13 @@ section {
   opacity: 0.5;
   cursor: auto;
 }
-.hero__btns button:not([disabled]):hover, .hero__btns button:not([disabled]):focus {
+.hero__btns button:not([disabled]):hover {
   color: #FFFFFF;
   background-color: #2C2C2C;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.hero__btns button:not([disabled]):hover svg path, .hero__btns button:not([disabled]):focus svg path {
+.hero__btns button:not([disabled]):hover svg path {
   fill: #FFFFFF;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;

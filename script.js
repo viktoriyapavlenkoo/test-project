@@ -62,52 +62,25 @@ infoBlock.onclick = function() {
 
 //slider-logic
 
-
-// let sliderDataMap;
-
-// getJsonData()
-
-// async function getJsonData() {
-//     fetch('slides.json')
-//     .then(response => response.json())
-//     .then(response => initSliderData(response));
-// }
-
-// async function initSliderData(jsonData) {
-//     sliderDataMap = new Map();
-//     for (let data of jsonData) {
-//         sliderDataMap.set(data.id, data.imageUrl)
-//     }
-//     console.log('done')
-//     console.log(sliderDataMap);
-// }
-
-// i()
-// console.log(sliderDataMap)
-
-// document.addEventListener('DOMContentLoaded', getJsonData)
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn')
 const sliderImgBlock = document.querySelector('.slider-img-block');
 const currentSlide = document.querySelector('.slides__current');
 const allSlides = document.querySelector('.slides__all');
 
+let images = new Map();
+
 fetch('slides.json')
     .then(response => response.json())
-    .then(response => {
-        //console.log(response)
-        let id = response[0].id;
-        // let elem = response[id-1];
-        //console.log(elem)
-        // for(let i = 0; i < response.length; i++) {
-        //     let id = response[i].id;
-        //     displaySlide(id)
-        // }
-        displaySlide(response, id);
-        initAllSlides(response)
+    .then(response => preloadImages(response))
+    .then(() => {
+        let id = 1;
+
+        displaySlide(id);
+        initAllSlides()
         prevBtn.onclick = function() {
             if(id > 1) {
-                displaySlide(response, --id)
+                displaySlide(--id)
                 initPageSlides(id)
                 nextBtn.removeAttribute('disabled')
             } 
@@ -116,36 +89,32 @@ fetch('slides.json')
             }
         }
         nextBtn.onclick = function() {
-            
-            if(id < response.length-1) {
-                displaySlide(response, ++id)
+            if(id < images.size) {
+                displaySlide(++id)
                 initPageSlides(id)
                 prevBtn.removeAttribute('disabled')
             } 
-            if(id == response.length-1) {
+            if(id == images.size) {
                 this.setAttribute('disabled', '')
             }
         }
-       // displaySlide(response[0])
-    
-    
     });
 
-function displaySlide(data, id) {
-    let index = id;
-    index--;
-    const elem = data[index]
-    //console.log(elem);
-    //console.log(id);
-    sliderImgBlock.innerHTML = ''
-    const img = document.createElement('img');
-    img.setAttribute('src', elem.imageUrl);
-    img.setAttribute('alt', elem.alt);
-    //console.log(img)
-    sliderImgBlock.append(img)
-
-
+function preloadImages(data) {
+    for(let i = 0; i < data.length; i++) {
+        let image = document.createElement('img');
+        image.setAttribute('src', data[i].imageUrl);
+        image.setAttribute('alt', data[i].alt);
+        images.set(data[i].id, image);
+    }
+    return data;
 }
+
+function displaySlide(id) {
+    sliderImgBlock.innerHTML = '';
+    sliderImgBlock.append(images.get(id));
+}
+
 
 function initPageSlides(id) { 
     if(id < 10) {
@@ -155,9 +124,9 @@ function initPageSlides(id) {
     }
 }
 
-function initAllSlides(data) { 
-    let countSlides = data.length++;
-    if(data.length < 10) {
+function initAllSlides() { 
+    let countSlides = images.size;
+    if(images.size < 10) {
         allSlides.textContent = '0' + countSlides;
     } else {
         allSlides.textContent = countSlides;
