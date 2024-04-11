@@ -1,5 +1,4 @@
 .contacts__content {
-
     display: flex;
     width: 100%;
     align-items: flex-start;
@@ -22,13 +21,13 @@
         }
     }
 }
+
 .contacts__form {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
     p {
         padding-left: 2rem;
-        //font-size: $form-footer-text;
         letter-spacing: 0.03em;
     }
 }
@@ -40,7 +39,6 @@
         height: 3rem;
         padding: 0 1.5rem ;
     }
-    
     textarea {
         position: relative;
         padding: 1rem 1.5rem;
@@ -53,14 +51,12 @@
         font-size: $main-text;
         letter-spacing: 0.04em;
         color: $text-color-grey;
-    
     }    
     .placeholder {
         position: absolute;
         top: 1rem;
         left: 1.5rem;
         z-index:2;
-        //font-size: $form-footer-text;
         letter-spacing: 0.04em;
     }
     .placeholder::before {
@@ -72,6 +68,7 @@
         color: $color-red;
     }
 }
+
 .input-wrapper input:focus + .placeholder,
 .textarea-wrapper textarea:focus + .placeholder {
     display: none;

@@ -12,21 +12,19 @@
 @mixin responsive($breakpoint) {
     @if $breakpoint == laptop {
         @media screen and (max-width: 1200px) {
-        @content;
+          @content;
         }
-
-
     } @else if $breakpoint == small-laptop {
         @media screen and (max-height: 865px) {
-        @content;
+          @content;
         }
     } @else if $breakpoint == tablet-land {
         @media screen and (max-width: 992px) {
-        @content;
+          @content;
       }
     } @else if $breakpoint == tablet-port {
         @media screen and (max-width: 768px) {
-        @content;
+          @content;
       }
     } @else if $breakpoint == small-tablet {
         @media screen and (max-width: 650px) {
@@ -37,7 +35,4 @@
           @content;
         }
       } 
-  }
-  @media screen {
-    
   }

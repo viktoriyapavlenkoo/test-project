@@ -4,16 +4,11 @@
     background-color: $color-primary;
     z-index: 5;
     &__nav {
-       
         display: flex;
         align-items: center;
         height: 6rem;
         justify-content: space-between;
-        @include responsive(laptop) {
-            // height: 12vh;
-        }
     }
-    
     &__menu {
         max-width: 40rem;
         width: 100%;
@@ -26,20 +21,8 @@
         }
     }
 }
+
 .menu__item {
-    // &--active {
-    //     a {
-    //         &::before {
-    //             //@include lines-psevdoelement(-4px, 100%);
-    //             background-color: red;
-    //         }
-    //         &::after {
-    //             @include lines-psevdoelement(1.4em, 100%);
-               
-    //         }
-    //     }
-       
-    // }
     a {
         position: relative;
         font-size: $small-text;
@@ -65,21 +48,16 @@
             width: 100%;                   
         }
     }
-
-    
-}
-
-.menu__item--active {
-    a {
-        &::before {
-            @include lines-psevdoelement(-4px, 100%);
-            //background-color: red;
-            
+    &--active {
+        a {
+            &::before {
+                @include lines-psevdoelement(-4px, 100%);
+            }
+            &::after {
+                @include lines-psevdoelement(1.4em, 100%);
+            }
         }
-        &::after {
-            @include lines-psevdoelement(1.4em, 100%);
-           
-        }
+       
     }
-   
+    
 }
