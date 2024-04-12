@@ -14,3 +14,14 @@
 .animation-section {
     transform: translate(0);
 }
+
+//slider-animation
+
+.slider-img-block {
+    opacity: 1;
+    transition: opacity 1s ease;    
+}
+
+.animation-slider {
+    opacity: 0;
+}

@@ -477,6 +477,7 @@ section {
 
 .company__container {
   position: relative;
+  background-color: #FBFBFB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -930,4 +931,14 @@ section {
 .animation-section {
   -webkit-transform: translate(0);
           transform: translate(0);
+}
+
+.slider-img-block {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.animation-slider {
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */

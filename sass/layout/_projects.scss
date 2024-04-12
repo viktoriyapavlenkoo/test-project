@@ -3,6 +3,7 @@
 }
 
 .projects__list {
+    
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -61,7 +62,7 @@
     }
     &:hover {
         .hover-block {
-            display: block;
+            display: block;    
         }
     }
 }
