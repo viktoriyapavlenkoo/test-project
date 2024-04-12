@@ -2,7 +2,7 @@
     font-family: 'TT Hoves';
     src: local('TT Hoves Regular'),
     local('TTHoves-Regular'),
-    url('/fonts/tthoves-regular.woff');
+    url('../test-project/fonts/tthoves-regular.woff');
     font-weight: 400;
 }
 
@@ -10,7 +10,7 @@
     font-family: 'TT Hoves';
     src: local('TT Hoves Medium'),
     local('TTHoves-Medium'),
-    url('/fonts/tthoves-medium.woff');
+    url('./test-project/fonts/tthoves-medium.woff');
     font-weight: 500;
 }
 
@@ -18,7 +18,7 @@
     font-family: 'TT Hoves';
     src: local('TT Hoves Light'),
     local('TTHoves-Light'),
-    url('/fonts/tthoves-light.woff');
+    url('/../fonts/tthoves-light.woff');
     font-weight: 300;
 }
 
@@ -26,7 +26,7 @@
     font-family: 'TT Hoves';
     src: local('TT Hoves Bold'),
     local('TTHoves-Bold'),
-    url('/fonts/tthoves-bold.woff');
+    url('../fonts/tthoves-bold.woff');
     font-weight: 700;
 }
 
@@ -34,6 +34,6 @@
     font-family: 'SF Pro Display';
     src: local('SF Pro Display Black'),
     local('SFProDisplay-Black'),
-    url('/fonts/sf-pro-display-black.otf');
+    url('/test-project/fonts/sf-pro-display-black.otf');
     font-weight: 900;
 }

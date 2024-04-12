@@ -1,26 +1,26 @@
 @font-face {
   font-family: "TT Hoves";
-  src: local("TT Hoves Regular"), local("TTHoves-Regular"), url("/fonts/tthoves-regular.woff");
+  src: local("TT Hoves Regular"), local("TTHoves-Regular"), url("../test-project/fonts/tthoves-regular.woff");
   font-weight: 400;
 }
 @font-face {
   font-family: "TT Hoves";
-  src: local("TT Hoves Medium"), local("TTHoves-Medium"), url("/fonts/tthoves-medium.woff");
+  src: local("TT Hoves Medium"), local("TTHoves-Medium"), url("./test-project/fonts/tthoves-medium.woff");
   font-weight: 500;
 }
 @font-face {
   font-family: "TT Hoves";
-  src: local("TT Hoves Light"), local("TTHoves-Light"), url("/fonts/tthoves-light.woff");
+  src: local("TT Hoves Light"), local("TTHoves-Light"), url("/../fonts/tthoves-light.woff");
   font-weight: 300;
 }
 @font-face {
   font-family: "TT Hoves";
-  src: local("TT Hoves Bold"), local("TTHoves-Bold"), url("/fonts/tthoves-bold.woff");
+  src: local("TT Hoves Bold"), local("TTHoves-Bold"), url("../fonts/tthoves-bold.woff");
   font-weight: 700;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: local("SF Pro Display Black"), local("SFProDisplay-Black"), url("/fonts/sf-pro-display-black.otf");
+  src: local("SF Pro Display Black"), local("SFProDisplay-Black"), url("/test-project/fonts/sf-pro-display-black.otf");
   font-weight: 900;
 }
 * {
