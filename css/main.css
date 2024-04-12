@@ -1,21 +1,21 @@
 @font-face {
   font-family: "TT Hoves";
-  src: local("TT Hoves Regular"), local("TTHoves-Regular"), url("/fonts/TTHoves-Regular.woff");
+  src: local("TT Hoves Regular"), local("TTHoves-Regular"), url("/fonts/tthoves-regular.woff");
   font-weight: 400;
 }
 @font-face {
   font-family: "TT Hoves";
-  src: local("TT Hoves Medium"), local("TTHoves-Medium"), url("/fonts/TTHoves-Medium.woff");
+  src: local("TT Hoves Medium"), local("TTHoves-Medium"), url("/fonts/tthoves-medium.woff");
   font-weight: 500;
 }
 @font-face {
   font-family: "TT Hoves";
-  src: local("TT Hoves Light"), local("TTHoves-Light"), url("/fonts/TTHoves-Light.woff");
+  src: local("TT Hoves Light"), local("TTHoves-Light"), url("/fonts/tthoves-light.woff");
   font-weight: 300;
 }
 @font-face {
   font-family: "TT Hoves";
-  src: local("TT Hoves Bold"), local("TTHoves-Bold"), url("/fonts/TTHoves-Bold.woff");
+  src: local("TT Hoves Bold"), local("TTHoves-Bold"), url("/fonts/tthoves-bold.woff");
   font-weight: 700;
 }
 @font-face {
@@ -892,18 +892,6 @@ section {
 .address__link::before {
   position: absolute;
   left: 0;
-}
-
-.footer__location::before {
-  content: url(../../images/map-point-icon.svg);
-}
-
-.footer__phone::before {
-  content: url(../../images/phone-icon.svg);
-}
-
-.footer__email::before {
-  content: url(../../images/email-icon.svg);
 }
 
 .left__container,
