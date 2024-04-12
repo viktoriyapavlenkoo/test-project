@@ -2,26 +2,27 @@
     font-family: 'TT Hoves';
     src: local('TT Hoves Regular'),
     local('TTHoves-Regular'),
-    url('../fonts/tthoves-regular.woff');
+    url('');
     font-weight: 400;
 }
+//
 
 @font-face {
     font-family: 'TT Hoves';
     src: local('TT Hoves Medium'),
     local('TTHoves-Medium'),
-    url('../fonts/tthoves-medium.woff');
+    url('');
     font-weight: 500;
 }
-
+//
 @font-face {
     font-family: 'TT Hoves';
     src: local('TT Hoves Light'),
     local('TTHoves-Light'),
-    url('../fonts/tthoves-light.woff');
+    url('');
     font-weight: 300;
 }
-
+//
 @font-face {
     font-family: 'TT Hoves';
     src: local('TT Hoves Bold'),
