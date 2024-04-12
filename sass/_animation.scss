@@ -1,0 +1,16 @@
+//scroll-animation
+
+.left__container,
+.right__container  {
+    transform: translate(-150%);
+    transition: transform 3s ease;    
+    @include responsive(laptop) {
+        transition-duration: 2s;
+    }
+}
+.right__container {
+    transform: translate(150%);
+}
+.animation-section {
+    transform: translate(0);
+}
