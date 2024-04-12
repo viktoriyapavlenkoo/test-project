@@ -1,14 +1,19 @@
 //utils
+
 @import './utils/fonts';
 @import './utils/variables';
 @import './utils/mixin';
+
 // base
+
 @import './base';
 
 //components
+
 @import './components';
 
 //layout
+
 @import './layout/header';
 @import './layout/burger';
 @import './layout/hero';
@@ -17,3 +22,7 @@
 @import './layout/projects';
 @import './layout/contacts';
 @import './layout/footer';
+
+//layout
+
+@import './animation';

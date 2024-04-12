@@ -128,3 +128,36 @@ contactBlock.onclick = function() {
 infoBlock.onclick = function() {
     info.classList.toggle('open');
 }
+
+
+//animation
+
+//scroll-animation
+
+const sections = document.querySelectorAll('.section__container')
+
+let windowCenter;
+
+window.addEventListener('DOMContentLoaded', () => {
+    scrollAnimation()
+})
+
+window.addEventListener('scroll', () => {
+    scrollAnimation()
+})
+
+function scrollAnimation() {
+    windowCenter = (window.innerHeight / 2) + window.scrollY;
+    sectionAnimation(sections);
+}
+
+function sectionAnimation(sections) {
+    sections.forEach(section => {
+        let scrollOffset = section.offsetTop - section.offsetHeight;
+        if (windowCenter >= scrollOffset) {
+            section.classList.add('animation-section')
+        } else {
+            section.classList.remove('animation-section')
+        }
+    })
+}
