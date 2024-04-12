@@ -28,21 +28,16 @@
         font-size: $small-text;
         letter-spacing: 0.2em;
         text-transform: uppercase;
-        
         &::before {
             @include lines-psevdoelement(-4px);
         }
-
         &::after {
             @include lines-psevdoelement(1.4em);
         }
-
         &:hover::before,
         &:focus::before{
-            
             width: 100%; 
         }
-
         &:hover::after,
         &:focus::after {
             width: 100%;                   
@@ -57,7 +52,5 @@
                 @include lines-psevdoelement(1.4em, 100%);
             }
         }
-       
     }
-    
 }

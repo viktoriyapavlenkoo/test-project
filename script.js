@@ -29,7 +29,7 @@ fetch('slides.json')
     .then(response => preloadImages(response))
     .then(() => {
         let id = 1;
-        displaySlide(id);
+        displayFirstSlide(id)
         initAllSlides();
         prevBtn.onclick = function() {
             if(id > 1) {
@@ -59,14 +59,25 @@ function preloadImages(data) {
         image.setAttribute('src', data[i].imageUrl);
         image.setAttribute('alt', data[i].alt);
         images.set(data[i].id, image);
+        image.classList.add('start-animation-slider');
     }
     return data;
 }
 
-function displaySlide(id) {
+function displayFirstSlide(id) {
     sliderImgBlock.innerHTML = '';
     sliderImgBlock.append(images.get(id));
 }
+
+function displaySlide(id) {
+    sliderImgBlock.classList.add('animation-slider');
+    setTimeout(() => {
+        sliderImgBlock.classList.remove('animation-slider');
+        sliderImgBlock.innerHTML = '';
+        sliderImgBlock.append(images.get(id));
+    }, 1000)    
+}
+
 
 function initPageSlides(id) { 
     if(id < 10) {
@@ -128,7 +139,6 @@ contactBlock.onclick = function() {
 infoBlock.onclick = function() {
     info.classList.toggle('open');
 }
-
 
 //animation
 
