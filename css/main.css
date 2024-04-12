@@ -894,6 +894,18 @@ section {
   left: 0;
 }
 
+.footer__location::before {
+  content: url(../images/map-point-icon.svg);
+}
+
+.footer__phone::before {
+  content: url(../images/phone-icon.svg);
+}
+
+.footer__email::before {
+  content: url(../images/email-icon.svg);
+}
+
 .left__container,
 .right__container {
   -webkit-transform: translate(-150%);
